@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
+  components: AngularComponent[] = [
+    { icon: 'appstore', name: 'Alert', redirectTo: '/alert' },
+    { icon: 'american-football', name: 'Action Sheet', redirectTo: '/action-sheet' }
+  ];
+
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+interface AngularComponent {
+  icon: string;
+  name: string;
+  redirectTo: string;
 }
