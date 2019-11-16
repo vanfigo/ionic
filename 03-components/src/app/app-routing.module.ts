@@ -9,8 +9,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/alert/alert.module').then( m => m.AlertPageModule)
   },
   {
-    path: 'acion-sheet',
-    loadChildren: () => import('./pages/acion-sheet/acion-sheet.module').then( m => m.AcionSheetPageModule)
+    path: 'action-sheet',
+    loadChildren: () => import('./pages/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
   }
 ];
 

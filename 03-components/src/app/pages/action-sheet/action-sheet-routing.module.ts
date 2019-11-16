@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AcionSheetPage } from './acion-sheet.page';
+import { ActionSheetPage } from './action-sheet.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: AcionSheetPage
+    component: ActionSheetPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AcionSheetPageRoutingModule {}
+export class ActionSheetPageRoutingModule {}
