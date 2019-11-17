@@ -1,4 +1,9 @@
-<app-header title="alert"></app-header>
+<app-header [title]="title"></app-header>
 <ion-content class="ion-padding">
-    <h1>Alert Page</h1>
+    <ion-button (click)="showAlert()" expand="full">
+        Show Alert
+    </ion-button>    
+    <ion-button (click)="showAlertPrompt()" expand="full">
+        Show Alert Prompt
+    </ion-button>
 </ion-content>

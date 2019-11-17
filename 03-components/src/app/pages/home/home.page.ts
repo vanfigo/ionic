@@ -9,7 +9,8 @@ export class HomePage implements OnInit {
 
   components: AngularComponent[] = [
     { icon: 'appstore', name: 'Alert', redirectTo: '/alert' },
-    { icon: 'american-football', name: 'Action Sheet', redirectTo: '/action-sheet' }
+    { icon: 'american-football', name: 'Action Sheet', redirectTo: '/action-sheet' },
+    { icon: 'beaker', name: 'Avatar', redirectTo: '/avatar' }
   ];
 
   constructor() { }
