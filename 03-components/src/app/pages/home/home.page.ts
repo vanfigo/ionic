@@ -19,7 +19,8 @@ export class HomePage implements OnInit {
     { icon: 'grid', name: 'Grid', redirectTo: '/grid' },
     { icon: 'infinite', name: 'Infinite Scroll', redirectTo: '/infinite-scroll' },
     { icon: 'hammer', name: 'Inputs', redirectTo: '/input' },
-    { icon: 'list', name: 'Slides', redirectTo: '/list' }
+    { icon: 'list', name: 'Slides', redirectTo: '/list' },
+    { icon: 'reorder', name: 'Reorder', redirectTo: '/list-reorder' }
   ];
 
   constructor() { }
