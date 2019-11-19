@@ -1,0 +1,17 @@
+<ion-menu menuId="menuComponents" side="start" type="overlay" contentId="main">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>Menu components</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle>
+        <ion-item *ngFor="let component of components | async" [routerLink]="[component.redirectTo]" detail>
+          <ion-label>{{component.name}}</ion-label>
+          <ion-icon slot="end" [name]="component.icon" color="betapp"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { IonicComponent } from 'src/app/models/interfaces';
+import { Observable } from 'rxjs';
+import { DataService } from 'src/app/providers/data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,31 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  components: AngularComponent[] = [
-    { icon: 'appstore', name: 'Alert', redirectTo: '/alert' },
-    { icon: 'american-football', name: 'Action Sheet', redirectTo: '/action-sheet' },
-    { icon: 'beaker', name: 'Avatar', redirectTo: '/avatar' },
-    { icon: 'radio-button-on', name: 'Button and Routes', redirectTo: '/buttons' },
-    { icon: 'card', name: 'Card', redirectTo: '/card' },
-    { icon: 'checkmark-circle-outline', name: 'Check', redirectTo: '/check' },
-    { icon: 'calendar', name: 'Date Time', redirectTo: '/date-time' },
-    { icon: 'car', name: 'Fabs', redirectTo: '/fab' },
-    { icon: 'grid', name: 'Grid', redirectTo: '/grid' },
-    { icon: 'infinite', name: 'Infinite Scroll', redirectTo: '/infinite-scroll' },
-    { icon: 'hammer', name: 'Inputs', redirectTo: '/input' },
-    { icon: 'list', name: 'Slides', redirectTo: '/list' },
-    { icon: 'reorder', name: 'Reorder', redirectTo: '/list-reorder' }
-  ];
+  components: Observable<IonicComponent[]>;
 
-  constructor() { }
+  constructor(private menuCtrl: MenuController,
+              private dataService: DataService) { }
 
   ngOnInit() {
+    this.components = this.dataService.getComponents();
   }
 
-}
+  onClick = () => {
+    this.menuCtrl.toggle();
+  }
 
-interface AngularComponent {
-  icon: string;
-  name: string;
-  redirectTo: string;
 }
