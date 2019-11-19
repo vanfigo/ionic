@@ -17,7 +17,8 @@ export class HomePage implements OnInit {
     { icon: 'calendar', name: 'Date Time', redirectTo: '/date-time' },
     { icon: 'car', name: 'Fabs', redirectTo: '/fab' },
     { icon: 'grid', name: 'Grid', redirectTo: '/grid' },
-    { icon: 'infinite', name: 'Infinite Scroll', redirectTo: '/infinite-scroll' }
+    { icon: 'infinite', name: 'Infinite Scroll', redirectTo: '/infinite-scroll' },
+    { icon: 'hammer', name: 'Inputs', redirectTo: '/input' }
   ];
 
   constructor() { }
