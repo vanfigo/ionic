@@ -18,7 +18,8 @@ export class HomePage implements OnInit {
     { icon: 'car', name: 'Fabs', redirectTo: '/fab' },
     { icon: 'grid', name: 'Grid', redirectTo: '/grid' },
     { icon: 'infinite', name: 'Infinite Scroll', redirectTo: '/infinite-scroll' },
-    { icon: 'hammer', name: 'Inputs', redirectTo: '/input' }
+    { icon: 'hammer', name: 'Inputs', redirectTo: '/input' },
+    { icon: 'list', name: 'Slides', redirectTo: '/list' }
   ];
 
   constructor() { }
