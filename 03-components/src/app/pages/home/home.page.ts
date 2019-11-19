@@ -13,7 +13,8 @@ export class HomePage implements OnInit {
     { icon: 'beaker', name: 'Avatar', redirectTo: '/avatar' },
     { icon: 'radio-button-on', name: 'Button and Routes', redirectTo: '/buttons' },
     { icon: 'card', name: 'Card', redirectTo: '/card' },
-    { icon: 'checkmark-circle-outline', name: 'Check', redirectTo: '/check' }
+    { icon: 'checkmark-circle-outline', name: 'Check', redirectTo: '/check' },
+    { icon: 'calendar', name: 'Date Time', redirectTo: '/date-time' }
   ];
 
   constructor() { }
