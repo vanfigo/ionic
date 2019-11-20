@@ -13,26 +13,13 @@ const routes: Routes = [
   { path: 'date-time', loadChildren: () => import('./pages/date-time/date-time.module').then( m => m.DateTimePageModule) },
   { path: 'fab', loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule) },
   { path: 'grid', loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule) },
-  {
-    path: 'infinite-scroll',
-    loadChildren: () => import('./pages/infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollPageModule)
-  },
-  {
-    path: 'input',
-    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
-  },
-  {
-    path: 'list',
-    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
-  },
-  {
-    path: 'list-reorder',
-    loadChildren: () => import('./pages/list-reorder/list-reorder.module').then( m => m.ListReorderPageModule)
-  },
-  {
-    path: 'loading',
-    loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingPageModule)
-  }
+  { path: 'infinite-scroll', loadChildren: () =>
+    import('./pages/infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollPageModule) },
+  { path: 'input', loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule) },
+  { path: 'list', loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule) },
+  { path: 'list-reorder', loadChildren: () => import('./pages/list-reorder/list-reorder.module').then( m => m.ListReorderPageModule) },
+  { path: 'loading', loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingPageModule) },
+  { path: 'modal', loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule) }
 ];
 
 @NgModule({
