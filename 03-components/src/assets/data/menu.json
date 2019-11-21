@@ -13,5 +13,6 @@
     { "icon": "list", "name": "Slides", "redirectTo": "/list" },
     { "icon": "reorder", "name": "Reorder", "redirectTo": "/list-reorder" },
     { "icon": "refresh-circle", "name": "Loading", "redirectTo": "/loading" },
-    { "icon": "phone-portrait", "name": "Modal", "redirectTo": "/modal" }
+    { "icon": "phone-portrait", "name": "Modal", "redirectTo": "/modal" },
+    { "icon": "tablet-portrait", "name": "Popover", "redirectTo": "/popover" }
 ]

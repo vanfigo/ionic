@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="betapp">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Popover Page</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="showPopover($event)">
+        <ion-icon slot="icon-only" name="contact"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-button (click)="showPopover($event)" expand="full">
+    Click me
+  </ion-button>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="success">
+    <ion-title>Footer</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="showPopover($event)">
+        <ion-icon slot="icon-only" name="contact"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
