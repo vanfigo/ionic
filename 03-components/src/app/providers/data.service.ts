@@ -12,6 +12,9 @@ export class DataService {
   getUsers = () =>
     this.httpClient.get('https://jsonplaceholder.typicode.com/users')
 
+  getAlbums = () =>
+    this.httpClient.get<any[]>('https://jsonplaceholder.typicode.com/albums')
+
   getComponents = () =>
     this.httpClient.get<IonicComponent[]>('/assets/data/menu.json')
 
