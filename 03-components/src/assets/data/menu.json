@@ -15,5 +15,6 @@
     { "icon": "refresh-circle", "name": "Loading", "redirectTo": "/loading" },
     { "icon": "phone-portrait", "name": "Modal", "redirectTo": "/modal" },
     { "icon": "tablet-portrait", "name": "Popover", "redirectTo": "/popover" },
-    { "icon": "code-working", "name": "ProgressBar", "redirectTo": "/progress-bar" }
+    { "icon": "code-working", "name": "ProgressBar", "redirectTo": "/progress-bar" },
+    { "icon": "arrow-round-down", "name": "Refresher", "redirectTo": "/refresher" }
 ]
