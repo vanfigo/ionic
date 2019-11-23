@@ -6,7 +6,7 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-menu-toggle>
+      <ion-menu-toggle autoHide="false">
         <ion-item *ngFor="let component of components | async" [routerLink]="[component.redirectTo]" detail>
           <ion-label>{{component.name}}</ion-label>
           <ion-icon slot="end" [name]="component.icon" color="betapp"></ion-icon>

@@ -19,5 +19,6 @@
     { "icon": "arrow-round-down", "name": "Refresher", "redirectTo": "/refresher" },
     { "icon": "search", "name": "Searchbar", "redirectTo": "/searchbar" },
     { "icon": "copy", "name": "Segment", "redirectTo": "/segment" },
-    { "icon": "albums", "name": "Slides", "redirectTo": "/slides" }
+    { "icon": "albums", "name": "Slides", "redirectTo": "/slides" },
+    { "icon": "cog", "name": "Tabs", "redirectTo": "/tabs" }
 ]
