@@ -23,7 +23,15 @@ const routes: Routes = [
   { path: 'popover', loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule) },
   { path: 'progress-bar', loadChildren: () => import('./pages/progress-bar/progress-bar.module').then( m => m.ProgressBarPageModule) },
   { path: 'refresher', loadChildren: () => import('./pages/refresher/refresher.module').then( m => m.RefresherPageModule) },
-  { path: 'searchbar', loadChildren: () => import('./pages/searchbar/searchbar.module').then( m => m.SearchbarPageModule) }
+  { path: 'searchbar', loadChildren: () => import('./pages/searchbar/searchbar.module').then( m => m.SearchbarPageModule) },
+  {
+    path: 'segment',
+    loadChildren: () => import('./pages/segment/segment.module').then( m => m.SegmentPageModule)
+  },
+  {
+    path: 'slides',
+    loadChildren: () => import('./pages/slides/slides.module').then( m => m.SlidesPageModule)
+  }
 ];
 
 @NgModule({

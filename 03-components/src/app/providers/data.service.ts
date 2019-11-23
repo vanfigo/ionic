@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { IonicComponent } from '../models/interfaces';
+import { delay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -17,5 +18,9 @@ export class DataService {
 
   getComponents = () =>
     this.httpClient.get<IonicComponent[]>('/assets/data/menu.json')
+
+  getSuperHeros = () =>
+    this.httpClient.get<IonicComponent[]>('/assets/data/superheroes.json')
+    .pipe(delay(1500))
 
 }
