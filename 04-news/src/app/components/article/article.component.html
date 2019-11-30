@@ -1,0 +1,13 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>
+      <span class="text-primary">{{articleNumber}}. </span>
+      <span class="article-source-name">{{article.source.name}}</span>
+    </ion-card-subtitle>
+    <ion-card-title color="light">{{article.title}}</ion-card-title>
+  </ion-card-header>
+  <ion-img *ngIf="article.urlToImage" [src]="article.urlToImage"></ion-img>
+  <ion-card-content>
+    <p>{{article.description}}</p>
+  </ion-card-content>
+</ion-card>
