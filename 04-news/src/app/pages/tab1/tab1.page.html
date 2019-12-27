@@ -1,4 +1,4 @@
-<ion-header no-border>
+<ion-header>
   <ion-toolbar color="dark">
     <ion-title>
       News App
@@ -8,4 +8,8 @@
 
 <ion-content color="dark">
   <app-articles [articles]="articles"></app-articles>
+  <ion-infinite-scroll threshold="150px" (ionInfinite)="loadArticles($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading articles...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 </ion-content>

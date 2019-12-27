@@ -1,0 +1,17 @@
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col>
+        <h3>Favorite Movies</h3>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid fixed>
+    <ion-row *ngFor="let movieByGenre of moviesByGenre">
+      <ion-col>
+        <h4>{{movieByGenre.genre.name}}</h4>
+        <app-slideshow-poster [movies]="movieByGenre.movies"></app-slideshow-poster>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

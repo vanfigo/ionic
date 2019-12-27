@@ -1,9 +1,15 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab Three
+      Favorites
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content></ion-content>
+<ion-content color="dark">
+  <ion-slides *ngIf="localDataService.articles?.length === 0">
+    <ion-slide>
+      <ion-label>There are no favorites yet</ion-label>
+    </ion-slide>
+  </ion-slides>
+  <app-articles [articles]="localDataService.articles" [atFavorites]="true"></app-articles>
+</ion-content>

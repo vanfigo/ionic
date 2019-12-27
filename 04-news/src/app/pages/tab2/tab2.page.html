@@ -1,9 +1,19 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header no-border>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab Two
+      Headlines
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content></ion-content>
+<ion-segment (ionChange)="segmentChanged($event)" scrollable color="tertiary">
+  <ion-segment-button *ngFor="let category of categories" [value]="category">
+    <ion-label class="ion-text-capitalize">{{category}}</ion-label>
+  </ion-segment-button>
+</ion-segment>
+<ion-content color="dark">
+  <app-articles [articles]="articles"></app-articles>
+  <ion-infinite-scroll threshold="25%" (ionInfinite)="loadArticles($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more articles...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

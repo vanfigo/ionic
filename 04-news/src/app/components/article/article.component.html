@@ -1,12 +1,15 @@
-<ion-card>
+<ion-card color="tertiary">
   <ion-card-header>
     <ion-card-subtitle>
-      <span class="text-primary">{{articleNumber}}. </span>
+      <span>{{articleNumber}}. </span>
       <span class="article-source-name">{{article.source.name}}</span>
+      <ion-button (click)="showActionSheet()" fill="clear" color="dark" class="article-more">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
     </ion-card-subtitle>
-    <ion-card-title color="light">{{article.title}}</ion-card-title>
+    <ion-card-title color="light" (click)="openArticle()">{{article.title}}</ion-card-title>
   </ion-card-header>
-  <ion-img *ngIf="article.urlToImage" [src]="article.urlToImage"></ion-img>
+  <ion-img *ngIf="article.urlToImage" [src]="article.urlToImage" (click)="openArticle()"></ion-img>
   <ion-card-content>
     <p>{{article.description}}</p>
   </ion-card-content>
